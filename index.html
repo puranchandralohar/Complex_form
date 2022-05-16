@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <div class="form-elements">
+                <label for="firstname">First Name </label>
+                <input type="text" name="user-fname" id="firstname" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-elements">
+                <label for="lastname">Last Name </label>
+                <input type="text" name="user-lname" id="lastname" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="form-elements">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email Id" required>
+            </div>
+
+            <div class="form-elements">
+                <label for="help-topic">Select Subject in which you need help:</label>
+                <input list="topics" id="help-topic" name="help-topic" />
+
+                <datalist id="topics">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="git & Github">
+                    <option value="React">
+                    <option value="Angular">
+                </datalist>
+            </div>
+
+            <div class="form-elements">
+                <label for="question">Enter Your Question:</label>
+                <textarea name="user-question" id="question" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

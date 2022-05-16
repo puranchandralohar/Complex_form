@@ -1,0 +1,24 @@
+form{
+    margin:auto;
+    padding:20px;
+    width: 30%;
+    text-align: center;
+}
+label{
+    display: block;
+    padding: 5px 10px;
+   
+}
+input , textarea{
+    width:70%;
+    padding: 10px;
+}
+
+.btn{
+    padding:8px 12px;
+    background-color: blue;
+    border:none;
+    outline:none;
+    color:#fff;
+    cursor: pointer;
+}
